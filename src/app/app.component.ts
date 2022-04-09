@@ -32,7 +32,7 @@ export class AppComponent {
     }
   ]
 
-  markerClicked(marker: string, index: number, infoWindowRef: any) {
+  markerClicked(marker: any, index: number, infoWindowRef: any) {
     if (this.lastInfoWindow) {
       this.lastInfoWindow.close();
     }
@@ -48,7 +48,7 @@ export class AppComponent {
     });
   }
 
-  markerDragEnd(marker: any, $event: any) {
-    console.log(marker, $event);
+  markerDragEnd(marker: any, index: number) {
+    console.log(marker, index);
   }
 }
