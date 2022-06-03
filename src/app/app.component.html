@@ -15,7 +15,7 @@
 		[longitude]="marker.lng"
 		[label]="marker.label"
 		[markerDraggable]="marker.draggable"
-		(dragEnd)="markerDragEnd(marker, i)">
+		(dragEnd)="markerDragEnd($event, i)">
 
     <agm-info-window #infoWindowRef>
 		<b>{{marker.lat}},  {{marker.lng}}</b>

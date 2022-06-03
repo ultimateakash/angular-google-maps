@@ -48,7 +48,8 @@ export class AppComponent {
     });
   }
 
-  markerDragEnd(marker: any, index: number) {
-    console.log(marker, index);
+  markerDragEnd($event: any, index: number) {
+    console.log($event.coords.lat);
+    console.log($event.coords.lng);
   }
 }
